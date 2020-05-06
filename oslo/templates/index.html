@@ -10,9 +10,17 @@
     <div class="top">
         <div class="top-content container">
             <div class="boxes">
-                <div class="label">OSLO SERVER</div>
-                <div class="value" id="">
-                    {{ server_name or "" }}
+                <div class="top_box box_title">
+                    <div class="label">OSLO SERVER</div>
+                    <div class="value" id="">
+                        {{ server_name or "" }}
+                    </div>
+                </div>
+                <div class="top_box box_status">
+                    <div class="label">STATUS</div>
+                    <div class="value" id="status_text">
+                        {{ state }}
+                    </div>
                 </div>
             </div>
         </div>
